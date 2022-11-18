@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/upload", require("./routes/uploadFiles.routes"));
+app.use("/auth", require("./routes/users.routes"));
 
 app.listen(port, () => {
   console.log(`Dev MMI listening on port ${port}!`);
